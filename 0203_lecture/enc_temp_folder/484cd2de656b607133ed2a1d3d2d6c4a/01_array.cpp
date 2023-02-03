@@ -33,12 +33,6 @@ int main() {
 	for (int i = 0; i < 3; i++) {
 		std::cout << friends[i] << std::endl;
 	}
-	//sizeof 안에 변수 or type을 인자로 넘겨줌. 크기를 byte 단위로 구함.
-	//sizeof(std::string) 대신 sizeof(friends[0])로 나눠도 됨
-	for (int i = 0; i < sizeof(friends)/sizeof(std::string); i++) {
-		std::cout << friends[i] << std::endl;
-	}
-
 
 	for (std::string f : friends) {
 		std::cout << f << std::endl;
